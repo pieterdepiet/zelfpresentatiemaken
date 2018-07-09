@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Zelf presentatie maken</title>
+    <style>
+      body{
+        text-align: center;
+      }
+    </style>
+    <script type="text/javascript" src="/script"></script>
+  </head>
+  <body id="achtergrond1">
+    <nav>
+      <a href="/"><button>Home</button></a>
+      <a href="/bewerken"><button>Bewerkpagina</button></a>
+      <a href="/preview"><button>Bekijkpagina</button></a>
+      <a href="/help"><button>Help</button></a>
+    </nav>
+    <h1 id="titel" onclick="bewerkTitel()">Titel</h1>
+    <h4 id="boven" onclick="bewerkText()">Koptekst. Klik op een onderdeel om aan te passen.</h4>
+    <p id="tekst1" onclick="bewerkText1()">Dit is een kleinere tekst. Tik op bekijken om te bekijken.</p>
+    <button onclick="setwidth()">Verander grootte</button>
+    <br>
+    <img width="10%" height="auto" id="afbe" src="https://images.duckduckgo.com/iu/?u=http%3A%2F%2Fimg.freepik.com%2Ficonen-gratis%2Fafbeelding-invoegen-icoon_318-33972.jpg%3Fsize%3D338%26ext%3Djpg&f=1" onclick="afb()"></img>
+    <br>
+    <strong>Selecteer achtergrondkleur</strong>
+    <select id="achtergrondkleur" onchange="veranderAchtergrond()">
+      <option value="white">wit</option>
+      <option value="black">zwart</option>
+      <option value="blue">blauw</option>
+      <option value="red">rood</option>
+      <option value="yellow">geel</option>
+      <option value="green">groen</option>
+      <option value="orange">oranje</option>
+      <option value="purple">paars</option>
+      <option value="beige">beige</option>
+      <option value="gray">grijs</option>
+    </select>
+    <br>
+    <strong>selecteer tekstkleur</strong>
+    <select id="tekstkleur" onchange="verandertekst()">
+      <option value="white">wit</option>
+      <option value="black">zwart</option>
+      <option value="blue">blauw</option>
+      <option value="red">rood</option>
+      <option value="yellow">geel</option>
+      <option value="green">groen</option>
+      <option value="orange">oranje</option>
+      <option value="purple">paars</option>
+      <option value="gray">grijs</option>
+    </select>
+    <br>
+    <a href="watch.html"><button>Bekijk direct wat u gemaakt heeft</button></a>
+  </body>
+</html>
